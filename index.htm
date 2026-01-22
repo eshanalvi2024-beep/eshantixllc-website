@@ -41,11 +41,18 @@
 <body><header>
   <img src= test2.png style="height:140px;">
   <nav>
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#policies">Policies</a>
-    <a href="#contact">Contact</a>
+    header {
+  background: #065f46;  /* Dark green */
+  padding: 18px 60px;
+  display: flex;
+  justify-content: flex-end;  /* Change from space-between */
+  align-items: center;
+  gap: 40px;  /* space between logo and menu */
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
   </nav>
 </header><section class="hero">
   <h1>Trusted Retailer for Beauty, Baby & Cleaning Products</h1>
