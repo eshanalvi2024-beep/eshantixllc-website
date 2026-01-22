@@ -1,149 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESHAN TIX LLC | Retail & Wholesale</title>
-  <link rel="icon" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* ===== Body ===== */
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f0fdf4;   /* Grove-style light green */
-      color: #0f172a;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESHAN TIX LLC | US Retail & Wholesale</title>
+<link rel="icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== Body ===== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f0fdf4;
+  color: #0f172a;
+}
 
-    /* ===== Header ===== */
-    header.site-header {
-      display: flex;
-      justify-content: space-between; /* menu left, logo right */
-      align-items: center;
-      padding: 18px 60px;
-      background: #065f46; /* dark green */
-      box-shadow: 0 2px 8px rgba(0,0,0,.05);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+/* ===== Header ===== */
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: #065f46;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-    header.site-header .menu {
-      display: flex;
-      gap: 25px;
-    }
+header.site-header .menu {
+  display: flex;
+  gap: 25px;
+}
 
-    header.site-header .menu a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
+header.site-header .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-    header.site-header .logo-container .logo {
-      height: 60px;
-      display: block;
-    }
+header.site-header .logo-container .logo {
+  height: 100px; /* Logo big */
+  display: block;
+}
 
-    /* ===== Hero Section ===== */
-    .hero {
-      padding: 80px 60px;
-      background: linear-gradient(rgba(2,6,23,.3), rgba(2,6,23,.3)), #047857; /* medium green */
-      color: #fff;
-      text-align: center;
-    }
+/* ===== Hero Section ===== */
+.hero {
+  padding: 80px 60px;
+  background: linear-gradient(rgba(2,6,23,.3), rgba(2,6,23,.3)), #047857;
+  color: #fff;
+  text-align: center;
+}
 
-    .hero h1 {
-      font-size: 44px;
-      margin-bottom: 10px;
-    }
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
 
-    .hero p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: #e5e7eb;
-    }
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #e5e7eb;
+  font-size: 18px;
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 20px;
-      margin-top: 40px;
-    }
+.hero .cta-buttons {
+  margin-top: 20px;
+}
 
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      height: 200px;
-      object-fit: cover;
-    }
+.hero .cta-buttons a {
+  text-decoration: none;
+  color: #fff;
+  background: #065f46;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.3s;
+}
 
-    /* ===== Sections ===== */
-    .section {
-      padding: 80px 60px;
-      background: #fff;
-    }
+.hero .cta-buttons a:hover {
+  background: #047857;
+}
 
-    .section.gray {
-      background: #f1f5f9;
-    }
+/* ===== Gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
 
-    .section h2 {
-      font-size: 36px;
-      margin-bottom: 30px;
-    }
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-      gap: 25px;
-    }
+/* ===== Sections ===== */
+.section {
+  padding: 80px 60px;
+  background: #fff;
+}
 
-    .card {
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 25px;
-    }
+.section.gray {
+  background: #f1f5f9;
+}
 
-    /* ===== Footer ===== */
-    .footer {
-      background: #020617;
-      color: #cbd5e1;
-      padding: 60px;
-      text-align: center;
-    }
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
 
-    .footer h3 {
-      color: #fff;
-      margin-bottom: 15px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 25px;
+}
 
-    .footer a {
-      color: #cbd5e1;
-      text-decoration: none;
-    }
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  transition: 0.3s;
+}
 
-    /* ===== Responsive ===== */
-    @media (max-width: 768px) {
-      header.site-header {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
-      }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
-      header.site-header .menu {
-        flex-wrap: wrap;
-      }
+/* ===== Footer ===== */
+.footer {
+  background: #020617;
+  color: #cbd5e1;
+  padding: 60px;
+  text-align: center;
+}
 
-      .hero {
-        padding: 60px 20px;
-      }
+.footer h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
 
-      .section {
-        padding: 60px 20px;
-      }
-    }
-  </style>
+.footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px){
+  header.site-header{
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  header.site-header .menu{
+    flex-wrap: wrap;
+  }
+  .hero{
+    padding: 60px 20px;
+  }
+  .section{
+    padding: 60px 20px;
+  }
+}
+</style>
 </head>
 <body class="homepage">
 
@@ -157,8 +181,7 @@
     <a href="#policies">Policies</a>
   </nav>
   <div class="logo-container">
-    <img src=test2.png
-      
+    <img src="logo.png" alt="ESHAN TIX LLC" class="logo">
   </div>
 </header>
 
@@ -166,4 +189,62 @@
 <section class="hero" id="home">
   <h1>Trusted US Retailer for Everyday Essentials</h1>
   <p>ESHAN TIX LLC delivers authentic beauty, baby, cleaning, grocery and household products directly from our US warehouse.</p>
-  <div class="
+  <div class="cta-buttons">
+    <a href="#products">Shop Now</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+  <div class="gallery">
+    <img src="warehouse1.jpg" alt="Warehouse">
+    <img src="warehouse2.jpg" alt="Packing">
+    <img src="warehouse3.jpg" alt="Delivery">
+    <img src="team1.jpg" alt="Team">
+    <img src="team2.jpg" alt="Team">
+  </div>
+</section>
+
+<!-- ===== Products Section ===== -->
+<section class="section" id="products">
+  <h2>Product Categories</h2>
+  <div class="grid">
+    <div class="card"><h3>Beauty & Personal Care</h3><p>Skincare, cosmetics, hygiene products.</p></div>
+    <div class="card"><h3>Cleaning Products</h3><p>Home and office cleaning essentials.</p></div>
+    <div class="card"><h3>Baby Products</h3><p>Baby care, diapers, wipes.</p></div>
+    <div class="card"><h3>Toys</h3><p>Educational and fun toys.</p></div>
+    <div class="card"><h3>Pet Supplies</h3><p>Food, care and accessories.</p></div>
+    <div class="card"><h3>Grocery & Household</h3><p>Daily grocery and essentials.</p></div>
+  </div>
+</section>
+
+<!-- ===== About Section ===== -->
+<section class="section gray" id="about">
+  <h2>About Our Company</h2>
+  <p>ESHAN TIX LLC is a US registered retail company focused on delivering high-quality everyday products directly to customers. All products are stocked and shipped from our warehouse ensuring fast delivery and authenticity.</p>
+</section>
+
+<!-- ===== Contact Section ===== -->
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: support@eshantix.com</p>
+  <p>Phone: +1 (XXX) XXX-XXXX</p>
+  <p>Business Hours: Monday – Friday, 9:00 AM – 6:00 PM (EST)</p>
+</section>
+
+<!-- ===== Policies Section ===== -->
+<section class="section gray" id="policies">
+  <h2>Policies</h2>
+  <h3>Privacy Policy</h3>
+  <p>We respect your privacy and are committed to protecting your personal information. Data is used only to fulfill orders and improve customer service.</p>
+  <h3>Return Policy</h3>
+  <p>Returns are accepted within 30 days of delivery. Items must be unused and in original packaging.</p>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <h3>ESHAN TIX LLC</h3>
+  <p>© 2026 ESHAN TIX LLC. All rights reserved.</p>
+  <p>US Registered Retail Company</p>
+  <p>Email: support@eshantix.com</p>
+</footer>
+
+</body>
+</html>
