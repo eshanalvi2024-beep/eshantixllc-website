@@ -16,17 +16,80 @@ font-family:Arial, sans-serif;
 background:#f4f7fb;
 color:#1b1b1b;
 }
+<header>
+  <!-- Logo -->
+  <img src= test2.png
 
-/* ===== HEADER ===== */
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 12px;
-background:#0d2b45;
-position:sticky;
-top:0;
-z-index:1000;
+  <!-- Menu -->
+  <nav class="header-nav">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#return">Return</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Optional: Social Icons -->
+  <div class="social-icons">
+    <a href="#"><img src="images/facebook.png"></a>
+    <a href="#"><img src="images/instagram.png"></a>
+    <a href="#"><img src="images/linkedin.png"></a>
+  </div>
+</header>
+
+  /* Header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px; /* left-right small gap */
+  background: #0d2b45;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo size */
+header .logo {
+  height: 55px;  /* logo বড় হবে */
+  width: auto;
+  margin-right: 16px;
+}
+
+/* Menu push right */
+.header-nav {
+  margin-left: auto;   /* menu একদম right corner */
+  display: flex;
+}
+
+/* Menu items spacing */
+.header-nav a {
+  margin-left: 10px;   /* 1cm gap approx, আগের 14px বা 40px না */
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 2px;
+  white-space: nowrap;  /* line break হবে না */
+}
+
+.header-nav a:hover {
+  color: #e6eef6;
+}
+
+/* Social icons top right */
+.social-icons {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  display: flex;
+}
+
+.social-icons img {
+  width: 18px;
+  margin-left: 8px;
+  filter: invert(1);
 }
 
 header img{
