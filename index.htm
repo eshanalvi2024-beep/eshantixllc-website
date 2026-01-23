@@ -13,8 +13,8 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#fff6f2;
-color:#333;
+background:#f4f7fb;
+color:#1b1b1b;
 }
 
 /* ===== HEADER ===== */
@@ -23,21 +23,26 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 40px;
-background:#ffb7a5;
+background:#0d2b45;
 position:sticky;
 top:0;
 z-index:1000;
 }
 
 header img{
-height:80px;
+height:50px;
 }
 
+/* ===== MENU ===== */
 nav a{
 margin-left:20px;
 text-decoration:none;
-color:#4b1e16;
+color:#ffffff;
 font-weight:bold;
+}
+
+nav a:hover{
+color:#e6eef6;
 }
 
 /* ===== HERO VIDEO ===== */
@@ -57,28 +62,33 @@ position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-background:rgba(255,183,165,0.9);
+background:rgba(13,43,69,0.9);
 padding:30px;
 border-radius:12px;
 text-align:center;
+color:#ffffff;
 }
 
 .hero-text h1{
 margin:0;
-color:#4b1e16;
 }
 
 .hero-text p{
 margin:10px 0;
 }
 
+/* ===== BUTTON ===== */
 .btn{
 display:inline-block;
 padding:10px 25px;
-background:#4b1e16;
-color:#fff;
+background:#081f33;
+color:#ffffff;
 text-decoration:none;
 border-radius:6px;
+}
+
+.btn:hover{
+background:#0d2b45;
 }
 
 /* ===== SECTIONS ===== */
@@ -89,7 +99,7 @@ padding:50px 40px;
 .section-title{
 text-align:center;
 font-size:28px;
-color:#4b1e16;
+color:#0d2b45;
 margin-bottom:30px;
 }
 
@@ -107,11 +117,11 @@ border-radius:12px;
 
 /* ===== PRODUCTS ===== */
 .product{
-background:#fff;
+background:#ffffff;
 padding:15px;
 border-radius:12px;
 text-align:center;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 .product img{
@@ -121,9 +131,10 @@ border-radius:10px;
 
 /* ===== FOOTER ===== */
 footer{
-background:#ffb7a5;
+background:#0d2b45;
 text-align:center;
 padding:15px;
+color:#ffffff;
 }
 </style>
 </head>
@@ -132,7 +143,7 @@ padding:15px;
 
 <!-- ===== HEADER ===== -->
 <header>
-<img src= test2.png
+<img src="images/logo.png" alt="ESHAN TIX LLC">
 <nav>
 <a href="#home">Home</a>
 <a href="#products">Products</a>
