@@ -5,20 +5,171 @@
 <title>ESHAN TIX LLC | Retail & Wholesale Supplier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- FAVICON -->
+<!-- Favicon -->
 <link rel="icon" type="image/png" href="images/favicon.png">
 
 <style>
 /* ===== GLOBAL ===== */
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#f4f7fb;
-color:#1b1b1b;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f7fb;
+  color:#1b1b1b;
 }
+
+/* ===== HEADER ===== */
+header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;   /* header left-right gap */
+  background:#0d2b45;
+  width: 100%;
+  top:0;
+  z-index:1000;
+}
+
+/* Logo */
+header .logo{
+  height:70px;  /* Logo বড় size */
+  width:auto;
+  margin-right:16px;
+}
+
+/* Menu */
+.header-nav{
+  margin-left:auto; /* push menu to right */
+  display:flex;
+}
+
+.header-nav a{
+  margin-left:20px;  /* gap ~2cm */
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:600;
+  font-size:14px;
+  padding:6px 2px;
+  white-space:nowrap;
+}
+
+.header-nav a:hover{
+  color:#e6eef6;
+}
+
+/* Social Icons */
+.social-icons{
+  position:absolute;
+  top:6px;
+  right:16px;  /* corner */
+  display:flex;
+}
+
+.social-icons a{
+  margin-left:8px;
+}
+
+.social-icons img{
+  width:20px;
+  filter:invert(1);  /* white on navy */
+}
+
+/* ===== HERO VIDEO ===== */
+.hero{
+  position:relative;
+  height:80vh;
+}
+
+.hero video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:rgba(13,43,69,0.9);
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  color:#ffffff;
+}
+
+.hero-text h1{
+  margin:0;
+}
+
+.hero-text p{
+  margin:10px 0;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 25px;
+  background:#081f33;
+  color:#ffffff;
+  text-decoration:none;
+  border-radius:6px;
+}
+
+.btn:hover{
+  background:#0d2b45;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:50px 40px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:28px;
+  color:#0d2b45;
+  margin-bottom:30px;
+}
+
+/* ===== IMAGE GRID ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.grid img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* ===== PRODUCTS ===== */
+.product{
+  background:#ffffff;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#0d2b45;
+  text-align:center;
+  padding:15px;
+  color:#ffffff;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
 <header>
-  <!-- Logo -->
-  <img src= test2.png
+  <img src="images/logo.png" alt="ESHAN TIX LLC Logo" class="logo">
 
   <!-- Menu -->
   <nav class="header-nav">
@@ -30,280 +181,93 @@ color:#1b1b1b;
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Optional: Social Icons -->
+  <!-- Social icons -->
   <div class="social-icons">
-    <a href="#"><img src="images/facebook.png"></a>
-    <a href="#"><img src="images/instagram.png"></a>
-    <a href="#"><img src="images/linkedin.png"></a>
+    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
   </div>
-</header>
-
-  /* Header */
-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 12px; /* left-right small gap */
-  background: #0d2b45;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Logo size */
-header .logo {
-  height: 55px;  /* logo বড় হবে */
-  width: auto;
-  margin-right: 16px;
-}
-
-/* Menu push right */
-.header-nav {
-  margin-left: auto;   /* menu একদম right corner */
-  display: flex;
-}
-
-/* Menu items spacing */
-.header-nav a {
-  margin-left: 10px;   /* 1cm gap approx, আগের 14px বা 40px না */
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 6px 2px;
-  white-space: nowrap;  /* line break হবে না */
-}
-
-.header-nav a:hover {
-  color: #e6eef6;
-}
-
-/* Social icons top right */
-.social-icons {
-  position: absolute;
-  top: 6px;
-  right: 12px;
-  display: flex;
-}
-
-.social-icons img {
-  width: 18px;
-  margin-left: 8px;
-  filter: invert(1);
-}
-
-header img{
-height:100px;
-width:160
-}
-
-/* ===== MENU ===== */
-nav a{
-margin-left:6px;
-text-decoration:none;
-color:#ffffff;
-font-weight:bold;
-font-size:6px;
-}
-
-nav a:hover{
-color:#e6eef6;
-}
-
-/* ===== HERO VIDEO ===== */
-.hero{
-position:relative;
-height:80vh;
-}
-
-.hero video{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-.hero-text{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:rgba(13,43,69,0.9);
-padding:30px;
-border-radius:12px;
-text-align:center;
-color:#ffffff;
-}
-
-.hero-text h1{
-margin:0;
-}
-
-.hero-text p{
-margin:10px 0;
-}
-
-/* ===== BUTTON ===== */
-.btn{
-display:inline-block;
-padding:10px 25px;
-background:#081f33;
-color:#ffffff;
-text-decoration:none;
-border-radius:6px;
-}
-
-.btn:hover{
-background:#0d2b45;
-}
-
-/* ===== SECTIONS ===== */
-section{
-padding:50px 40px;
-}
-
-.section-title{
-text-align:center;
-font-size:28px;
-color:#0d2b45;
-margin-bottom:30px;
-}
-
-/* ===== IMAGE GRID ===== */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.grid img{
-width:100%;
-border-radius:12px;
-}
-
-/* ===== PRODUCTS ===== */
-.product{
-background:#ffffff;
-padding:15px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-}
-
-.product img{
-width:100%;
-border-radius:10px;
-}
-
-/* ===== FOOTER ===== */
-footer{
-background:#0d2b45;
-text-align:center;
-padding:15px;
-color:#ffffff;
-}
-</style>
-</head>
-
-<body>
-
-<!-- ===== HEADER ===== -->
-<header>
-<img src= test2.png
-image heght:120px
-width:220px
-<nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#privacy">Privacy</a>
-<a href="#return">Return</a>
-<a href="#contact">Contact</a>
-</nav>
 </header>
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="home">
-<video autoplay muted loop>
-<source src="video/hero.mp4" type="video/mp4">
-</video>
-
-<div class="hero-text">
-<h1>ESHAN TIX LLC</h1>
-<p>Trusted Retail & Small Wholesale Supplier</p>
-<a href="#products" class="btn">Shop Products</a>
-</div>
+  <video autoplay muted loop>
+    <source src="video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-text">
+    <h1>ESHAN TIX LLC</h1>
+    <p>Trusted Retail & Small Wholesale Supplier</p>
+    <a href="#products" class="btn">Shop Products</a>
+  </div>
 </section>
 
 <!-- ===== GALLERY ===== -->
 <section>
-<h2 class="section-title">Our Operations</h2>
-<div class="grid">
-<img src="images/office.jpg">
-<img src="images/warehouse.jpg">
-<img src="images/prep.jpg">
-<img src="images/delivery.jpg">
-</div>
+  <h2 class="section-title">Our Operations</h2>
+  <div class="grid">
+    <img src="images/office.jpg">
+    <img src="images/warehouse.jpg">
+    <img src="images/prep.jpg">
+    <img src="images/delivery.jpg">
+  </div>
 </section>
 
 <!-- ===== PRODUCTS ===== -->
 <section id="products">
-<h2 class="section-title">Our Products</h2>
-<div class="grid" id="productList"></div>
+  <h2 class="section-title">Our Products</h2>
+  <div class="grid" id="productList"></div>
 </section>
 
 <!-- ===== ABOUT ===== -->
 <section id="about">
-<h2 class="section-title">About ESHAN TIX LLC</h2>
-<p>
-ESHAN TIX LLC is a U.S.-registered retail and small wholesale company focused on
-sourcing, preparing, and fulfilling consumer products with professionalism and compliance.
-We work with verified suppliers and follow strict quality and logistics standards.
-</p>
+  <h2 class="section-title">About ESHAN TIX LLC</h2>
+  <p>
+    ESHAN TIX LLC is a U.S.-registered retail and small wholesale company focused on
+    sourcing, preparing, and fulfilling consumer products with professionalism and compliance.
+  </p>
 </section>
 
 <!-- ===== PRIVACY ===== -->
 <section id="privacy">
-<h2 class="section-title">Privacy Policy</h2>
-<p>
-We respect customer privacy and protect all business and personal information.
-No data is shared with third parties without consent.
-</p>
+  <h2 class="section-title">Privacy Policy</h2>
+  <p>
+    We respect customer privacy and protect all business and personal information.
+  </p>
 </section>
 
 <!-- ===== RETURN ===== -->
 <section id="return">
-<h2 class="section-title">Return Policy</h2>
-<p>
-Returns are accepted according to supplier and manufacturer guidelines.
-Contact us for approval before any return.
-</p>
+  <h2 class="section-title">Return Policy</h2>
+  <p>
+    Returns are accepted according to supplier and manufacturer guidelines.
+  </p>
 </section>
 
 <!-- ===== CONTACT ===== -->
 <section id="contact">
-<h2 class="section-title">Contact Us</h2>
-<p>
-📧 Email: support@eshantix.com <br>
-📍 Location: United States <br>
-📦 Business Type: Retail & Small Wholesale
-</p>
+  <h2 class="section-title">Contact Us</h2>
+  <p>
+    📧 Email: support@eshantix.com <br>
+    📍 Location: United States <br>
+    📦 Business Type: Retail & Small Wholesale
+  </p>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-<p>© 2026 ESHAN TIX LLC. All Rights Reserved.</p>
+  <p>© 2026 ESHAN TIX LLC. All Rights Reserved.</p>
 </footer>
 
 <!-- ===== PRODUCT SCRIPT ===== -->
 <script>
 const productList = document.getElementById("productList");
-
 for(let i=1;i<=100;i++){
-productList.innerHTML += `
-<div class="product">
-<img src="images/warehouse.jpg">
-<h3>Product ${i}</h3>
-<p>High-quality retail & wholesale item</p>
-</div>`;
+  productList.innerHTML += `
+    <div class="product">
+      <img src="images/warehouse.jpg">
+      <h3>Product ${i}</h3>
+      <p>High-quality retail & wholesale item</p>
+    </div>`;
 }
 </script>
 
