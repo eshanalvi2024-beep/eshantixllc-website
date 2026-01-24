@@ -159,8 +159,12 @@ Buy $50 & Get Free Shipping Across USA
 </div>
 
 <header>
-<div class="header-container">
-
+<div class="header-container">{
+.header-container{
+  display:flex;
+  align-items:center; 
+  justify-content:space-between;
+}
 <nav>
 <a href="#">Home</a>
 <a href="#">Products</a>
@@ -175,10 +179,14 @@ Buy $50 & Get Free Shipping Across USA
 </div>
 
 <div class="icons">
-<span>🔍</span>SEARCH YOUR CHOICE
-<span>🛒</span>ADD TO CARD YOUR PRODUCTS
+<span>🔍</span>
+<span>🛒</span>
 </div>
-
+.icons{
+  display:flex;          
+  align-items:center;    
+  gap:12px;
+}
 </div>
 </header>
 
